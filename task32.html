@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image in Marquee</title>
+  <style>
+    body {
+      font-family: Georgia, serif;
+      margin: 20px;
+      text-align: justify;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    .marquee-container {
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+    .marquee-content {
+      display: inline-block;
+      animation: scroll-left 20s linear infinite;
+    }
+
+    .marquee-content img {
+      height: 200px;
+      margin: 0 10px;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Image in Marquee</h2>
+  <p>
+    On the Insert tab, the galleries include items that are designed to coordinate with the overall look of your document. You can use these galleries to insert tables, headers, footers, lists, cover pages, and other document building blocks. When you create pictures, charts, or diagrams, they also coordinate with your current document look...
+  </p>
+
+  <div class="marquee-container">
+    <div class="marquee-content">
+      <img src="https://igca.co.in/super_admin/user_img/12957.jpg" alt="Image 1">
+      <img src="https://igca.co.in/super_admin/img_logo/5778.jpg" alt="Image 2">
+      <img src="https://igca.co.in/super_admin/user_img/12957.jpg" alt="Image 1">
+      <img src="https://igca.co.in/super_admin/img_logo/5778.jpg" alt="Image 2">
+      <img src="https://igca.co.in/super_admin/user_img/12957.jpg" alt="Image 1">
+      <img src="https://igca.co.in/super_admin/img_logo/5778.jpg" alt="Image 2">
+    </div>
+  </div>
+
+</body>
+</html>
